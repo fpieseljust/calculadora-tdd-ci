@@ -2,6 +2,7 @@ import math
 
 import operations
 
+
 def test_suma():
     # TESTING
     assert operations.suma(3, 3) == 6
