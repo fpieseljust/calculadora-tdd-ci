@@ -1,7 +1,6 @@
 import math
 
 
-
 def suma(sumand1, sumand2):
     return sumand1 + sumand2
 
