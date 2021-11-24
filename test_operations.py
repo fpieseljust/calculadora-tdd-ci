@@ -1,9 +1,6 @@
 import math
 
-import pytest
-
 import operations
-
 
 def test_suma():
     # TESTING
@@ -32,18 +29,20 @@ def test_mult():
 def test_div():
     # TESTING
     assert operations.div(3, 3) == 1
-    assert math.isnan(operations.div(10, 0)) == True
+    assert math.isnan(operations.div(10, 0))
     assert operations.div(-3, 3) == -1
     assert operations.div(-10, -5) == 2
+
 
 def test_square_root():
     assert operations.square(9) == 3
     assert operations.square(0) == 0
-    assert math.isnan(operations.square(-9)) == True
+    assert math.isnan(operations.square(-9))
+
 
 def test_factorial():
     assert operations.factorial(5) == 120
     assert operations.factorial(0) == 1
     assert operations.factorial(1) == 1
-    assert math.isnan(operations.factorial(1.4)) == True
-    assert math.isnan(operations.factorial(-4)) == True
+    assert math.isnan(operations.factorial(1.4))
+    assert math.isnan(operations.factorial(-4))

@@ -16,7 +16,7 @@ def mult(mult1, mult2):
 def div(dividend, divisor):
     try:
         return dividend / divisor
-    except ZeroDivisionError as e:
+    except ZeroDivisionError:
         import math
         return math.nan
 
@@ -24,7 +24,7 @@ def div(dividend, divisor):
 def square(radicand):
     try:
         return math.sqrt(radicand)
-    except ValueError as e:
+    except ValueError:
         return math.nan
 
 
@@ -37,6 +37,3 @@ def factorial(num):
         return result
     else:
         return math.nan
-
-
-factorial(1.4)
