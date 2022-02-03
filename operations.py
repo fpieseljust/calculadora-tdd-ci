@@ -33,7 +33,7 @@ def factorial(num):
         result = 1
         while(num > 1):
             result = num * result
-            num = num - 1
+            num = num - 2
         return result
     else:
         return math.nan
